@@ -1,0 +1,17 @@
+:root {
+    --white: #EEEEEE;
+    --light-blue: #64CCC5;
+    --dark-teal: #176B87;
+    --navy: #053B50;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('assets/Roboto-Regular.ttf');
+}
+
+body {
+    margin: 0px;
+    background: var(--white);
+    font-family: roboto;
+}
