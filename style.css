@@ -78,7 +78,7 @@ main {
 
 }
 
-img {
+main img {
     border-radius: 10px;
     height: 500px;
 }
@@ -89,4 +89,35 @@ img {
 
 .info h3 {
     font-size: 2em;
+}
+
+.card {
+    justify-self: center;
+}
+
+a img {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin: 32px;
+    gap: 8px;
 }
