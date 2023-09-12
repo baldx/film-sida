@@ -1,8 +1,8 @@
 :root {
-    --white: #EEEEEE;
-    --light-blue: #64CCC5;
-    --dark-teal: #176B87;
-    --navy: #053B50;
+    --cream: #F8F0E5;
+    --light-beige: #EADBC8;
+    --dark-beige: #DAC0A3;
+    --navy: #0F2C59;
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
     margin: 0px;
-    background: var(--white);
+    background: var(--cream);
     font-family: roboto;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -26,10 +26,16 @@ body {
 
 aside {
     width: 40vh;
-    background-color: var(--light-blue);
-    height: 80vh;
+    background-color: var(--light-beige);
+    grid-row: 1 / 3;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 0px;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
 }
 
 ul {
@@ -46,14 +52,13 @@ a {
 
 header {
     font-size: 5em;
-    background: var(--dark-teal);
+    background: var(--light-beige);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     height: 20vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    grid-column: 1 / 3 ;
+    grid-column: 2 / 3 ;
 }
 
 main {
@@ -101,6 +106,11 @@ a img {
     border: 2px solid black;
 }
 
+.card a img:hover {
+    transform: rotate(5deg) translate(42px, 18px);
+    transition: all 300ms ease-in-out;
+}
+
 .top-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,4 +130,8 @@ a img {
     justify-content: center;
     margin: 32px;
     gap: 8px;
+}
+
+aside a:hover {
+    color: rgb(109, 90, 90);
 }
